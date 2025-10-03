@@ -76,6 +76,8 @@ This diagram helps in planning and understanding the system's architecture, show
 
 Below, you can see the Class Diagram for the Banking Account Project:
 
+<br />
+
 ```mermaid
 classDiagram
 class Account {
@@ -142,6 +144,8 @@ AccountRepository <|.. AccountController : "Implements"
 <br />
 
 The project will be structured with the following **Classes** and **Interfaces**, each with clearly defined responsibilities:
+
+<br />
 
 | Class/Interface     | Description                                                    |
 | ------------------- | ------------------------------------------------------------ |
