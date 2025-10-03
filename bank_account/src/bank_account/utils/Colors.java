@@ -1,4 +1,4 @@
-package bank_account.util;
+package bank_account.utils;
 
 public class Colors {
 

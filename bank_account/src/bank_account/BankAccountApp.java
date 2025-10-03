@@ -2,7 +2,7 @@ package bank_account;
 
 import java.util.Scanner;
 
-import bank_account.util.Colors;
+import bank_account.utils.Colors;
 
 public class BankAccountApp {
 
