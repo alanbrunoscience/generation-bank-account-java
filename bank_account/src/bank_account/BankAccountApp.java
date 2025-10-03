@@ -2,6 +2,8 @@ package bank_account;
 
 import java.util.Scanner;
 
+import bank_account.util.Colors;
+
 public class BankAccountApp {
 
 	public static void main(String[] args) {
@@ -11,7 +13,8 @@ public class BankAccountApp {
 			int option;
 
 			while (true) {
-				System.out.println("**************************************************");
+				System.out.println(Colors.TEXT_YELLOW + Colors.ANSI_BLACK_BACKGROUND
+						+ "**************************************************");
 				System.out.println("                                                  ");
 				System.out.println("             WELCOME TO THE JAVA BANK             ");
 				System.out.println("                                                  ");
@@ -29,13 +32,13 @@ public class BankAccountApp {
 				System.out.println("       0 - Exit.                                  ");
 				System.out.println("                                                  ");
 				System.out.println("**************************************************");
-				System.out.print("\n→ Choose one of the options above: ");
+				System.out.print("\n→ Choose one of the options above: " + Colors.TEXT_RESET);
 				option = input.nextInt();
 
 				if (option == 0) {
 					System.out.println("\nFinishing the program...");
 					System.out.println("\n**************************************************");
-					System.out.print("     🏦 Java Bank - Your Future Starts Here!      ");
+					System.out.print(Colors.TEXT_WHITE_BOLD + "     🏦 Java Bank - Your Future Starts Here!      ");
 					about();
 					input.close();
 					System.exit(0);
@@ -43,34 +46,34 @@ public class BankAccountApp {
 
 				switch (option) {
 				case 1:
-					System.out.println("\n\n=== Create a New Account ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Create a New Account ===\n\n");
 					break;
 				case 2:
-					System.out.println("\n\n=== List All Accounts ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== List All Accounts ===\n\n");
 					break;
 				case 3:
-					System.out.println("\n\n=== Search Account By Number ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Search Account By Number ===\n\n");
 					break;
 				case 4:
-					System.out.println("\n\n=== Search Account By Holder ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Search Account By Holder ===\n\n");
 					break;
 				case 5:
-					System.out.println("\n\n=== Update Account Data ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Update Account Data ===\n\n");
 					break;
 				case 6:
-					System.out.println("\n\n=== Delete Account ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Delete Account ===\n\n");
 					break;
 				case 7:
-					System.out.println("\n\n=== Withdraw ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Withdraw ===\n\n");
 					break;
 				case 8:
-					System.out.println("\n\n=== Deposit ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Deposit ===\n\n");
 					break;
 				case 9:
-					System.out.println("\n\n=== Transfer Amounts Between Accounts ===\n\n");
+					System.out.println(Colors.TEXT_WHITE_BOLD + "\n\n=== Transfer Amounts Between Accounts ===\n\n");
 					break;
 				default:
-					System.out.println("\n→ Invalid option!\n");
+					System.out.println(Colors.TEXT_RED_BOLD + "\n→ Invalid option!\n");
 					break;
 				}
 			}
